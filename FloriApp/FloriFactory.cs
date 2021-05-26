@@ -19,6 +19,12 @@ namespace FloriApp
                 case FloareEnum.Lalele:
                     floare = new Lalele();
                 break;
+                case FloareEnum.Lalele_galbene:
+                    floare = new LaleleGalbene();
+                break;
+                case FloareEnum.Lalele_rosii:
+                    floare = new LaleleRosii();
+                break;
                 case FloareEnum.Muscate:
                     floare = new Muscate();
                 break;

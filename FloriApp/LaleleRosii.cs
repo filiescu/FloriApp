@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FloriApp
 {
-    public class LaleleGalbene : Lalele
+    public class LaleleRosii : Lalele
     {
         public override void GetCuloare()
         {
-            Console.WriteLine("Lalele galbene.");
+            Console.WriteLine("Lalele rosii.");
         }
     }
 }
