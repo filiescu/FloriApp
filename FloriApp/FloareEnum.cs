@@ -6,6 +6,8 @@
         {
             Trandafiri,
             Lalele,
+            Lalele_galbene,
+            Lalele_rosii,
             Muscate,
             FloareDeHartie
         }

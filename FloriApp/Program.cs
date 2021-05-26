@@ -14,6 +14,8 @@ namespace FloriApp
 
             DetaliiFlore(FloareEnum.Trandafiri);
             DetaliiFlore(FloareEnum.Lalele);
+            DetaliiFlore(FloareEnum.Lalele_galbene);
+            DetaliiFlore(FloareEnum.Lalele_rosii);
             DetaliiFlore(FloareEnum.Muscate);
             DetaliiFlore(FloareEnum.FloareDeHartie);
         }
