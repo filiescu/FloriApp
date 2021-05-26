@@ -6,36 +6,31 @@ using System.Threading.Tasks;
 
 namespace FloriApp
 {
-    public class FloriFactory
+    public partial class FloriFactory
     {
-        public static readonly string Trandafiri = "trandafir";
-        public static readonly string Lalele = "lalea";
-        public static readonly string Muscate = "muscata";
-        public static readonly string FloareDeHartie = "floaredehartie";
-
-        public IFlori CreazaFloare(string tipFloare)
+        public IFlori CreazaFloare(FloareEnum tipFloare)
         {
-             IFlori floare ;
-             if (Trandafiri.Equals(tipFloare))
-             {
-                 floare = new Trandafiri();
-             }
-             else if (Lalele.Equals(tipFloare))
-             {
-                 floare = new Lalele();
-             }
-             else if (Muscate.Equals(tipFloare))
-             {
-                 floare = new Muscate();
-             }
-             else if (FloareDeHartie.Equals(tipFloare))
+            IFlori floare;
+            switch (tipFloare)
             {
-                floare = new FloareDeHartie();
+                case FloareEnum.Trandafiri:
+                    floare = new Trandafiri();
+                break;
+                case FloareEnum.Lalele:
+                    floare = new Lalele();
+                break;
+                case FloareEnum.Muscate:
+                    floare = new Muscate();
+                break;
+                case FloareEnum.FloareDeHartie:
+                    floare = new FloareDeHartie();
+                break;
+                default:
+                    floare = new Trandafiri();
+                break;   
             }
-             else {
-                 floare = new Trandafiri();
-             }
-             return floare;
+
+            return floare;
         }
     }
 }

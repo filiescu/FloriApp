@@ -1,4 +1,5 @@
 ﻿using System;
+using static FloriApp.FloriFactory;
 
 namespace FloriApp
 {
@@ -6,44 +7,18 @@ namespace FloriApp
     {
         static void Main(string[] args)
         {
-            /* IFlori lalele = new Lalele();
-             //FloriDeGradina lalele2 = new Lalele();
-             //Lalele lalele3 = new Lalele();
-
-             Afisare(lalele);
-
-             IFlori trandafiri = new Trandafiri();
-             Afisare(trandafiri);
-
-             IFlori muscate = new Muscate();
-             Afisare(muscate);
-
-             IFlori floareDeHartie = new FloareDeHartie();
-             Afisare(floareDeHartie);
-       
-             FloriFactory floriFactory = new FloriFactory();
-
-             IFlori trandafiri = floriFactory.CreazaFloare(FloriFactory.Trandafiri);
-             Afisare(trandafiri);
-
-             IFlori lalele = floriFactory.CreazaFloare(FloriFactory.Lalele);
-             Afisare(lalele);
-
-             IFlori muscate = floriFactory.CreazaFloare(FloriFactory.Muscate);
-             Afisare(muscate);
-
-             IFlori floareDeHartie = floriFactory.CreazaFloare(FloriFactory.FloareDeHartie);
-             Afisare(floareDeHartie);
+            /*  IFlori lalele = new Lalele();
+                FloriDeGradina lalele2 = new Lalele();
+                Lalele lalele3 = new Lalele();
             */
-            DetaliiFlore("trandafir");
-            DetaliiFlore("lalea");
-            DetaliiFlore("muscata");
-            DetaliiFlore("floaredehartie");
 
-
+            DetaliiFlore(FloareEnum.Trandafiri);
+            DetaliiFlore(FloareEnum.Lalele);
+            DetaliiFlore(FloareEnum.Muscate);
+            DetaliiFlore(FloareEnum.FloareDeHartie);
         }
 
-        static void DetaliiFlore(string floare) {
+        static void DetaliiFlore(FloareEnum floare) {
             FloriFactory floriFactory = new FloriFactory();
             IFlori Ifloare = floriFactory.CreazaFloare(floare);
             Afisare2(Ifloare);

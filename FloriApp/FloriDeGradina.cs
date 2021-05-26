@@ -10,7 +10,7 @@ namespace FloriApp
     {
         public void GetTip()
         {
-            Console.WriteLine("Flori de gradina.");
+            Console.WriteLine("Flori de gradina: ");
         }
 
         public abstract void GetCuloare();

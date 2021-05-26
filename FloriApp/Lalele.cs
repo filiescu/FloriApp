@@ -8,7 +8,7 @@ namespace FloriApp
 {
     public class Lalele : FloriDeGradina
     {
-        public override void GetCuloare()
+        public override  void GetCuloare()
         {
             Console.WriteLine("Lalale rosii, galbene, albe, etc");
         }
