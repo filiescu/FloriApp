@@ -8,9 +8,18 @@ namespace FloriApp
 {
     public class LaleleRosii : Lalele
     {
-        public override void GetCuloare()
+        public new void GetCuloare()
         {
             Console.WriteLine("Lalele rosii.");
+        }
+
+        public new void GetLaleaInfo1()
+        {
+            Console.WriteLine("Info 1 lalele rosii");
+        }
+
+        public new void GetLaleaInfo2() {
+            Console.WriteLine("Info 2 lalele rosii");
         }
     }
 }

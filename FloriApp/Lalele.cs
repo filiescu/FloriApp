@@ -27,5 +27,25 @@ namespace FloriApp
         {
             Console.WriteLine("Lalele se inmultesc prin bulbi.");
         }
+
+        public void  GetLaleaInfo1()
+        {
+            Console.WriteLine("Info 1 lalele");
+        }
+
+        public virtual void GetLaleaInfo2()
+        {
+            Console.WriteLine("Info 2 lalele");
+        }
+
+        public virtual void GetLaleaInfo3()
+        {
+            Console.WriteLine("Info 3 lalele");
+        }
+
+        public  void GetLaleaInfo4()
+        {
+            Console.WriteLine("Info 4 lalele");
+        }
     }
 }
